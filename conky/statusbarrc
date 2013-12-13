@@ -1,0 +1,47 @@
+double_buffer yes
+background no
+own_window yes
+own_window_transparent yes
+own_window_type normal
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+own_window_argb_visual yes
+own_window_argb_value 170
+draw_borders no
+draw_graph_borders no
+border_outer_margin 0
+draw_shades no
+gap_y 0
+gap_x 0
+alignment top_left
+update_interval 1
+default_color E2E2E2
+color2 D370A3
+#color3 E2E2E2
+#color3 929292
+#color4 D8476A
+#default_shade_color 000000
+own_window_colour 000000
+use_xft yes
+xftfont haxrcorpttf:size=14
+use_spacer none
+minimum_size 1366 50
+#border_inner_margin 0
+uppercase yes
+draw_shades no
+draw_graph_borders no
+
+TEXT
+${voffset 20}${goto 30}cpu 0 ${color2}${goto 80}${cpugraph cpu0 12,60}${color}
+${goto 30}cpu 1 ${color2}${goto 80}${cpugraph cpu1 12,60}${color}
+${offset 180}${voffset -30}${font Osaka:size=8}$mpd_title by $mpd_artist${goto 480}${color2}$mpd_elapsed${color}
+${offset 180}${color2}${voffset 4}${mpd_bar 4,250}${goto 480}$mpd_length${color}
+${offset 550}${voffset -32}disk usage /home/choco${goto 730}${color2}${fs_used /home/choco}
+${offset 550}${voffset 4}${color2}${fs_bar 12,140 /home/choco}${color}${goto 730}${fs_size /home/choco}
+${offset 820}${voffset -40}${font haxrcorpttf:size=42}$mem${font}
+${offset 950}${voffset -30}${color2}${font Osaka:size=8}RAM
+${offset 950}${voffset 0}$memmax${color}
+${offset 1050}${voffset -30}battery  ${color2}$battery_percent %${color}
+${offset 1050}${voffset 0}uptime ${goto 1114}${color2}$uptime_short${color}${font}
+${offset 1200}${voffset -36}${font haxrcorpttf:size=42}${time %H:%M}
+${offset 1300}${voffset -58}${font Osaka:size=8}${color2}${time %b %d}${color}
+${offset 1300}${voffset 0}${time %Y}
