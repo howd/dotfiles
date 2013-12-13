@@ -1,0 +1,33 @@
+double_buffer yes
+background yes
+own_window yes
+own_window_transparent no
+own_window_type dock
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+own_window_argb_visual yes
+own_window_argb_value 170
+draw_borders no
+draw_graph_borders no
+border_outer_margin 0
+draw_shades no
+gap_y 0
+gap_x 0
+alignment top_left
+update_interval 1
+default_color E2E2E2
+color2 D370A3
+#color3 E2E2E2
+#color3 929292
+#color4 D8476A
+#default_shade_color 000000
+own_window_colour 000000
+use_xft yes
+xftfont haxrcorpttf:size=14
+use_spacer none
+minimum_size 1366 70
+border_inner_margin 0
+uppercase yes
+draw_shades no
+draw_graph_borders no
+
+TEXT
