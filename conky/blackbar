@@ -1,0 +1,34 @@
+double_buffer yes
+background yes
+own_window  yes
+own_window_transparent no
+own_window_type normal
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+#own_window_argb_visual yes
+#own_window_argb_value 170
+draw_borders no
+draw_graph_borders no
+border_outer_margin 0
+draw_shades no
+gap_y 74
+gap_x 0
+alignment top_left
+update_interval 1
+default_color 303030
+color2 98CBFE
+#color3 E2E2E2
+#color3 929292
+#color4 D8476A
+#default_shade_color 000000
+own_window_colour EA80B0
+use_xft yes
+xftfont haxrcorpttf:size=16
+use_spacer none
+minimum_size 1366 20
+#border_inner_margin 20
+uppercase yes
+draw_shades no
+draw_graph_borders no
+
+TEXT
+${goto 14}it's ${time %A} and it's ${execi 300 curl -s "http://weather.yahooapis.com/forecastrss?w=1044316&u=c" -o ~/.cache/weather.xml}${execi 300 grep "yweather:condition" ~/.cache/weather.xml | grep -o "text=\"[^\"]*\"" | grep -o "\"[^\"]*\"" | grep -o "[^\"]*" | tr '[a-z]' '[A-Z]'} with ${execi 300 grep "yweather:condition" ~/.cache/weather.xml | cut -d "m" -f2 | cut -d "=" -f2 | cut -d '"' -f2}°C temperature${goto 570}${exec whoami} powered by ${exec uname -r}$alignr TO DO: Introduction to Linguistic Assignment   
