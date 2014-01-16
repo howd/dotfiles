@@ -1,0 +1,99 @@
+theme
+	name Simple Theme
+	author lucano94 <http://lucano94.deviantart.com/>
+
+panel
+	position bottom
+	background tile.png
+	
+desktop_switcher
+	idle
+		left_corner tile.png
+		left tile.png
+		center tile.png
+		right tile.png
+		right_corner tile.png
+		font HeldustryFTVBasic Demi 7
+			color 226 226 226
+			align center
+			offset 0 0
+			align center
+		
+	pressed
+		left_corner tile.png
+		left tile.png
+		center tile.png
+		right tile.png
+		right_corner tile.png
+		font HeldustryFTVBasic Demi 7
+			color 0 162 255
+			align center
+			offset 0 0
+			align center
+
+launchbar
+	icon_size 16 16
+
+empty 5
+
+taskbar
+	idle
+		left tile.png
+		center tile.png
+		right tile.png
+		font HeldustryFTVBasic Demi 7
+			color 226 226 226
+			offset 0 0
+			align center
+
+	idle_highlight
+		left tile.png
+		center tile.png
+		right tile.png
+		font HeldustryFTVBasic Demi 7
+			color 226 226 226
+			offset 0 0
+			align center
+
+	pressed
+		left tile.png
+		center tile.png
+		right tile.png
+		font HeldustryFTVBasic Demi 7
+			color 0 162 255
+			offset 0 0
+			align center
+
+	pressed_highlight
+		left tile.png
+		center tile.png
+		right tile.png
+		font HeldustryFTVBasic Demi 7
+			color 0 162 255
+			offset 0 0
+			align center
+
+	task_max_width
+
+empty 2
+
+systray
+	icon_size 14 14
+	icon_spacing 2
+	icon_offset 0 0
+
+empty 2
+
+clock
+	background
+		left tile.png
+		center tile.png
+		right tile.png
+	font HeldustryFTVBasic Demi 7
+		color 226 226 226
+		offset 0 0
+		align center
+	time_format %A, %d %b %y, %H:%M
+
+empty 2
+		

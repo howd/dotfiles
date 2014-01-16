@@ -1,0 +1,37 @@
+double_buffer yes
+background yes
+own_window yes
+own_window_transparent no
+own_window_type override
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+#own_window_argb_visual yes
+#own_window_argb_value 170
+draw_borders no
+draw_graph_borders no
+border_outer_margin 0
+draw_shades no
+gap_y 0
+gap_x 0
+alignment top_left
+update_interval 1
+default_color E2E2E2
+color2 56c2d6
+#color3 E2E2E2
+#color3 929292
+#color4 D8476A
+#default_shade_color 000000
+own_window_colour 424242
+use_xft yes
+xftfont Tanuki Permanent Marker:size=10
+use_spacer none
+minimum_size 1366 20
+#border_inner_margin 0
+uppercase no
+draw_shades no
+draw_graph_borders no
+
+TEXT
+${goto 10}${voffset 4}$color2${font PizzaDude Bullets:size=10}*$color$font ${cpu cpu0}% ${cpu cpu1}% ${goto 90}${voffset -1}$color2${font PizzaDude Bullets:size=10}+$color$font $mem of $memmax ${goto 235}${voffset -1}$color2${font PizzaDude Bullets:size=10}~$color$font $battery_percent%$alignc${voffset -1}$color2${font PizzaDude Bullets:size=10}u$font$color $mpd_artist $color2${mpd_bar 4,50}$color ${voffset -1}$mpd_title $color2${font PizzaDude Bullets:size=10}y$font$color
+${voffset -14}${goto 1190}$color2${font PizzaDude Bullets:size=10}Y$color$font ${execi 1 amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $5}'}%${voffset -1}${goto 1243}$color2${font PizzaDude Bullets:size=10}m$color$font ${voffset -1}${exec whoami}@${exec hostname}
+${voffset -13}${execi 300 curl -s "http://weather.yahooapis.com/forecastrss?w=1044316&u=c" -o ~/.cache/weather.xml}$alignr${execi 300 grep "yweather:condition" ~/.cache/weather.xml | grep -o "text=\"[^\"]*\"" | grep -o "\"[^\"]*\"" | grep -o "[^\"]*" | tr '[a-z]' '[A-Z]'}${color} ${execi 300 grep "yweather:condition" ~/.cache/weather.xml | grep -o "temp=\"[^\"]*\"" | grep -o "\"[^\"]*\"" | grep -o "[^\"]*"}°C                           
+${voffset -20}

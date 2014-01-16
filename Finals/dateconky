@@ -1,0 +1,40 @@
+double_buffer yes
+background yes
+own_window yes
+own_window_transparent yes
+own_window_type normal
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+#own_window_argb_visual yes
+#own_window_argb_value 170
+draw_borders no
+draw_graph_borders no
+border_outer_margin 0
+draw_shades no
+gap_y 100
+gap_x -200
+alignment bm
+update_interval 1
+default_color E2E2E2
+color2 3BA275
+#color3 E2E2E2
+#color3 929292
+#color4 D8476A
+#default_shade_color 000000
+own_window_colour 303030
+use_xft yes
+xftfont Tanuki Permanent Marker:size=30
+use_spacer none
+#minimum_size 1366 500
+#maximum_width 1920
+#border_inner_margin 0
+uppercase no
+draw_shades no
+draw_graph_borders no
+#text_buffer_size 512
+
+TEXT
+It's ${time %b %d, %Y}
+${time %H:%M}
+
+${font Tanuki Permanent Marker:size=15}Take a deep breath and relax
+for the time being.
