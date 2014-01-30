@@ -1,0 +1,42 @@
+double_buffer yes
+background yes
+own_window yes
+own_window_transparent yes
+own_window_type override
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+#own_window_argb_visual yes
+#own_window_argb_value 170
+draw_borders no
+draw_graph_borders no
+border_outer_margin 0
+draw_shades no
+gap_y 50
+gap_x 0
+alignment tm
+update_interval 1
+default_color 2d2d2d
+color2 ffffff
+color3 dedede
+#color3 929292
+#color4 D8476A
+#default_shade_color 000000
+own_window_colour ffffff
+use_xft yes
+xftfont M+ 1m:size=14
+use_spacer none
+minimum_size 408 768
+border_inner_margin 0
+uppercase no
+draw_shades no
+draw_graph_borders no
+
+TEXT
+${image /home/kuugo/Templates/cropped1.png -s 408x178}
+${image /home/kuugo/Templates/square.png -p 0,200 -s 408x80}
+${image /home/kuugo/Templates/g3015.png -p 20,212 -s 56x56}
+${image /home/kuugo/Templates/line.png -p 100,240 -s 290x3}
+${voffset 132}${goto 100}${color2}$mpd_title
+${voffset 19}${goto 100}$mpd_artist$color
+${voffset -260}${goto 30}${font PT Sans Narrow:size=25}${time %H:%M}$font
+${voffset -5}${goto 30}${font PT Sans Narrow:size=20}${time %B %d}
+${voffset -5}${goto 80}${time %Y}

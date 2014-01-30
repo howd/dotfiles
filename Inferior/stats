@@ -1,0 +1,44 @@
+double_buffer yes
+background yes
+own_window yes
+own_window_transparent no
+own_window_type override
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+#own_window_argb_visual yes
+#own_window_argb_value 170
+draw_borders no
+draw_graph_borders no
+border_outer_margin 0
+draw_shades no
+gap_y 0
+gap_x 0
+alignment tl
+update_interval 1
+default_color b3b3b3
+color2 ffffff
+color3 bfaeea
+color4 5cd67f
+color5 eabfae
+color6 5cb3d6
+color7 d65cb3
+color8 b3d65c
+color9 fdfdfd
+#default_shade_color 000000
+own_window_colour 3D352A
+use_xft yes
+xftfont MonteCarlo Fixed 12:size=13
+use_spacer none
+minimum_size 1024 15
+border_inner_margin 0
+uppercase no
+draw_shades no
+draw_graph_borders no
+
+TEXT
+${voffset 2}${goto 5}${color3}RAM: $color4$mem$color of $memmax | 
+${voffset -12}${goto 155}${color5}CPU: ${goto 195}${cpu cpu0}%${goto 220}${cpu cpu1}%
+${voffset -12}$alignr$color6${exec whoami}  $color
+${voffset -12}${goto 890}VOLUME: ${color7}${execi 1 amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $5}'}%$color |
+${voffset -12}${goto 785}UPTIME $color8${uptime_short}$color  |
+${voffset -13}$alignc${font JackeyFont:size=8}$color3$mpd_artist :: $color9$mpd_title$font
+${voffset -24}
