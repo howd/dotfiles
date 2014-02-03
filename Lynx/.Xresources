@@ -1,0 +1,69 @@
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.autohint: 0
+Xft.hinting: 1
+Xft.antialias: 1
+URxvt*font:xft:MonteCarlo Fixed 12:pixelsize=16,xft:Osaka:size=12
+urxvt*scrollBar: false
+URxvt*letterSpace: -1
+!!urxvt.transparent: false
+URxvt.depth: 32
+!!URxvt.background: [80]#000000
+!!urxvt*foreground: #BBBBBB
+!URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+!URxvt*.shading: 150
+*background: #303030
+*foreground: #b3b3b3
+
+! --- standard colors ---
+
+! black
+*color0: #1d1d1d
+
+! bright_black
+*color8: #2e2e2e
+
+! red
+*color1: #d67f5c
+
+! bright_red
+*color9: #eabfae
+
+! green
+*color2: #5cd67f
+
+! bright_green
+*color10: #aeeabf
+
+! yellow
+*color3: #b3d65c
+
+! bright_yellow
+*color11: #d9eaae
+
+! blue
+*color4: #7f5cd6
+
+! bright_blue
+*color12: #bfaeea
+
+! magenta
+*color5: #d65cb3
+
+! bright_magenta
+*color13: #eaaed9
+
+! cyan
+*color6: #5cb3d6
+
+! bright_cyan
+*color14: #aed9ea
+
+! white
+*color7: #b3b3b3
+
+! bright_white
+*color15: #fdfdfd

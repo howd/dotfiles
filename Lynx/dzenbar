@@ -1,0 +1,14 @@
+background yes
+out_to_console yes
+out_to_x no
+update_interval 1
+use_xft yes
+
+TEXT
+^bg(\#00a2ff)^fg(\#ffffff) ^i(/home/kuugo/stlarch_icons-1.2/headphone1.xbm) ^fn(HC Maru Gothic-8)$mpd_title by $mpd_artist ^fg(\#00a2ff)^bg()^fn(Inconsolata\-dz for Powerline-13)^fn()^fn()^fg() \
+^i(/home/kuugo/stlarch_icons-1.2/nbstack.xbm) ${execi 300 curl -s "http://weather.yahooapis.com/forecastrss?w=1044316&u=c" -o ~/.cache/weather.xml}${execi 300 grep "yweather:condition" ~/.cache/weather.xml | grep -o "text=\"[^\"]*\"" | grep -o "\"[^\"]*\"" | grep -o "[^\"]*" | tr '[a-z]' '[A-Z]'}${color} ${execi 300 grep "yweather:condition" ~/.cache/weather.xml | cut -d "m" -f2 | cut -d "=" -f2 | cut -d '"' -f2}°C ^fn(Inconsolata\-dz for Powerline-14)\
+^pa(520;-2)^fg(\#D67F5C)^fn(Inconsolata\-dz for Powerline-14)^fn()^fg()^pa()^bg(\#D67F5C) ^i(/home/kuugo/stlarch_icons-1.2/cpu13.xbm) ${cpu cpu0}%  ^pa(570) ${cpu cpu1}%    ^bg()\
+^pa(605;-2)^bg(\#D67F5C)^fn(Inconsolata\-dz for Powerline-14)^fn()^bg()^pa()^bg(\#FFFFFF)^fg(\#292929) ^i(/home/kuugo/stlarch_icons-1.2/vol1.xbm) ${execi 1 amixer get Master | awk 'END{gsub(/\[|\]|%/,""); print $5}'}%    \
+^pa(670;-2)^fn(Inconsolata\-dz for Powerline-14)^fn()^bg()^pa() ^fg(\#FFFFFF)^i(/home/kuugo/stlarch_icons-1.2/mem1.xbm) $mem of $memmax ^bg()\
+^pa(810)^fg(\#00A2FF)^fn(Inconsolata\-dz for Powerline-13)^fn()^pa()^bg(\#00A2FF)^fg(\#ffffff) ^i(/home/kuugo/stlarch_icons-1.2/ac15.xbm) ${uptime_short}    \
+^pa(890;-2)^fg(\#ffffff)^fn(Inconsolata\-dz for Powerline-14)^fn()^pa()^bg(\#FFFFFF)^fg(\#00A2FF) ^i(/home/kuugo/stlarch_icons-1.2/messenger2.xbm) ${exec whoami}@${exec hostname}^fg()  

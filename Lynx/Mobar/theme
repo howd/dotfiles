@@ -1,0 +1,94 @@
+theme
+	name Mobar
+	author lucano94
+
+panel
+        position bottom
+        background 1.png
+
+desktop_switcher
+        idle
+                left_corner 1.png
+                left 1.png
+                center 1.png
+                right 1.png
+                right_corner 1.png
+                font Envy Code R 8
+                        color 255 255 255
+                        offset 0 0
+                        align center
+
+        pressed
+                left_corner 3.png
+                left 3.png
+                center 3.png
+                right 3.png
+                right_corner 3.png
+                font Envy Code R 8
+                        color 255 255 255
+                        offset 0 0
+                        align center
+	    
+empty 5
+
+taskbar
+        idle
+                left 1.png
+                center 1.png
+                right 1.png
+                font Envy Code R 8
+                        color 255 255 255
+                        offset 0 0
+                        align center
+
+        idle_highlight
+                left 1.png
+                center 1.png
+                right 1.png
+                font Envy Code R 8
+                        color 255 255 255
+                        offset 0 0
+                        align center
+
+        pressed
+                left 2.png
+                center 2.png
+                right 2.png
+                font Envy Code R 8
+                        color 255 255 255
+                        offset 0 0
+                        align center
+
+        pressed_highlight
+                left 2.png
+                center 2.png
+                right 2.png
+                font Envy Code R 8
+                        color 255 255 255
+                        offset 0 0
+                        align center
+
+        task_max_width 150
+
+empty 2
+
+systray
+        icon_size 10 10
+        icon_spacing 5
+        icon_offset 0 0
+
+empty 5
+
+clock
+        background
+                left tile.png
+                center tile.png
+                right tile.png
+        font Envy Code R 8
+                color 255 255 255
+                offset 0 0
+                align center
+
+        time_format %A, %b %d, %H:%M
+
+empty 2
