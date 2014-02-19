@@ -1,0 +1,56 @@
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.autohint: 0
+Xft.hinting: 1
+Xft.antialias: 1
+URxvt*font:xft:Envy Code R:pixelsize=10,xft:Tanuki Permanent Marker:size=8
+urxvt*scrollBar: false
+URxvt*letterSpace: -1
+URxvt*loginShell: true
+!!urxvt.transparent: false
+URxvt.depth: 32
+!!URxvt.background: [80]#000000
+!!urxvt*foreground: #BBBBBB
+!URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+!URxvt*.shading: 150
+! -------- BASE -------- #
+  *foreground: 	 #4862A3
+  *background: 	 #FFFFFF
+  *cursorColor:  #1C1C23
+  *colorUL:      #1E828C
+! ---------------------- #
+
+!Black
+*color0:               #6C84B8
+*color8:               #4862A3
+
+!Red
+*color1:               #6C84B8
+*color9:               #4862A3
+
+!Green
+*color2:               #6C84B8
+*color10:              #4862A3
+
+!Yellow
+*color3:               #6C84B8
+*color11:              #4862A3
+
+!Blue
+*color4:               #6C84B8
+*color12:              #4862A3
+
+!Magenta
+*color5:               #6C84B8
+*color13:              #4862A3
+
+!Cyan
+*color6:               #6C84B8
+*color14:              #4862A3
+
+!White
+*color7:               #6C84B8
+*color15:              #4862A3
