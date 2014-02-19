@@ -1,0 +1,16 @@
+## etude for xfwm4 
+## atrxx 
+
+#full_width_title=false
+#show_app_icon=true
+#button_layout=O|HMC
+button_offset=0
+button_spacing=0
+maximized_offset=4
+title_vertical_offset_active=1
+title_vertical_offset_inactive=1
+active_text_color=#6782AF
+inactive_text_color=#CED3DC
+shadow_delta_x=-4
+shadow_delta_y=-4
+

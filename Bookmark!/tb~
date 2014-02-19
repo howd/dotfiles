@@ -1,0 +1,56 @@
+double_buffer yes
+background yes
+own_window yes
+own_window_transparent no
+own_window_type override
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+own_window_argb_visual yes
+own_window_argb_value 170
+draw_borders no
+draw_graph_borders no
+border_outer_margin 0
+draw_shades no
+gap_y 0
+gap_x 0
+alignment bl
+update_interval 1
+default_color DFE1E8
+color2 F0E1DE
+color3 ffffff
+#color3 929292
+#color4 D8476A
+#default_shade_color 000000
+own_window_colour 2d2d2d
+use_xft yes
+xftfont Chinacat:size=12
+use_spacer none
+minimum_size 1024 210
+border_inner_margin 0
+uppercase no
+draw_shades no
+draw_graph_borders no
+
+TEXT
+${image /media/Natsu/kuugo/dotfiles/Bookmark\!/tb.png -p 780,10}
+${voffset -10}${goto 230}${font Chinacat:italic:size=12}"But that 100 day period was a very wonderful time."$font
+${image /media/Natsu/kuugo/dotfiles/Bookmark\!/line.png -p 10,37 -s 800x2}
+${voffset -15}${goto 350}--Natsume
+${voffset 30}${goto 10}CPU ${goto 130}RAM ${goto 275}DISK ${goto 420}UPTIME ${goto 520}USER ${goto 625}${time %d %b %Y}
+${image /media/Natsu/kuugo/dotfiles/Bookmark\!/line.png -p 10,112 -s 700x1}
+${voffset -15}${goto 10}CPU 1   ${color2}${cpugraph cpu0 15,30}
+${goto 10}CPU 2  $color2${cpugraph cpu1 15,30}${goto 130}
+${voffset -39}${goto 130}${font Chinacat:size=8}$mem ${goto 195}$memmax
+${voffset -25}${goto 130}${color2}${membar 5,100}$font
+${voffset 2}${goto 207}$memperc%
+${voffset -47}${goto 275}${fs_bar 5,100 /}
+${voffset -13}${goto 275}${font Chinacat:size=8}root:  ${goto 302}${fs_used /} / ${fs_size /}$font
+${voffset -9}${goto 353}${fs_used_perc /}%
+${voffset -44}${goto 420}${uptime_short}
+${goto 420}- clear -
+${voffset -33}${goto 520}${exec whoami}
+${voffset -31}${goto 680}${time %H:%M}
+${voffset 35}${goto 10}${mpd_bar 5,465}
+${voffset -10}${goto 10}${font Osaka:size=10}$mpd_title by $mpd_artist
+${voffset -17}${goto 380}[ $mpd_elapsed / $mpd_length ]$font
+${voffset -35}${goto 500}${font Chinacat:size=20}Tooboe Bookmark!
+${voffset -300}

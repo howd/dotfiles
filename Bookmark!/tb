@@ -31,12 +31,12 @@ draw_shades no
 draw_graph_borders no
 
 TEXT
-${image /home/kuugo/Templates/tb.png -p 780,10}
+${image "/media/Natsu/kuugo/dotfiles/Bookmark!/tb.png" -p 780,10}
 ${voffset -10}${goto 230}${font Chinacat:italic:size=12}"But that 100 day period was a very wonderful time."$font
-${image /home/kuugo/Templates/line.png -p 10,37 -s 800x2}
+${image "/media/Natsu/kuugo/dotfiles/Bookmark!/line.png" -p 10,37 -s 800x2}
 ${voffset -15}${goto 350}--Natsume
 ${voffset 30}${goto 10}CPU ${goto 130}RAM ${goto 275}DISK ${goto 420}UPTIME ${goto 520}USER ${goto 625}${time %d %b %Y}
-${image /home/kuugo/Templates/line.png -p 10,112 -s 700x1}
+${image "/media/Natsu/kuugo/dotfiles/Bookmark!/line.png" -p 10,112 -s 700x1}
 ${voffset -15}${goto 10}CPU 1   ${color2}${cpugraph cpu0 15,30}
 ${goto 10}CPU 2  $color2${cpugraph cpu1 15,30}${goto 130}
 ${voffset -39}${goto 130}${font Chinacat:size=8}$mem ${goto 195}$memmax

@@ -1,0 +1,37 @@
+double_buffer yes
+background no
+own_window yes
+own_window_transparent yes
+own_window_type normal
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+#own_window_argb_visual yes
+#own_window_argb_value 170
+draw_borders no
+draw_graph_borders no
+border_outer_margin 0
+draw_shades no
+gap_y 80
+gap_x 50
+alignment tl
+update_interval 1
+default_color 687FA6
+color2 F0E1DE
+color3 ffffff
+#color3 929292
+#color4 D8476A
+#default_shade_color 000000
+own_window_colour 687FA6
+use_xft yes
+xftfont 01FLOPDESIGN:size=30
+use_spacer none
+minimum_size 320 20
+border_inner_margin 0
+uppercase no
+draw_shades no
+draw_graph_borders no
+
+TEXT
+$alignc${time %d}日 ${time %m}月
+$hr
+$alignc${time %R}
+${alignc}${font Code Bold:size=12}Feb 20: Start registering for next classes.$font

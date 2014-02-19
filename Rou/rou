@@ -1,0 +1,37 @@
+double_buffer yes
+background yes
+own_window yes
+own_window_transparent no
+own_window_type override
+own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
+own_window_argb_visual yes
+own_window_argb_value 170
+draw_borders no
+draw_graph_borders no
+border_outer_margin 0
+draw_shades no
+gap_y 0
+gap_x 0
+alignment bl
+update_interval 1
+default_color ffffff
+color2 F0E1DE
+color3 ffffff
+#color3 929292
+#color4 D8476A
+#default_shade_color 000000
+own_window_colour 687FA6
+use_xft yes
+xftfont GLYPHICONS Halflings:size=9
+use_spacer none
+minimum_size 1024 20
+border_inner_margin 0
+uppercase no
+draw_shades no
+draw_graph_borders no
+
+TEXT
+ ${voffset 2} ${cpubar cpu0 3,30}${goto 80}${cpubar cpu1 3,30} \
+${goto 130}${voffset 0} ${membar 3,100}\
+${goto 270}${voffset 0} ${fs_bar 3,100 /} \
+${goto 410}${voffset 0} ${voffset -2}${font Envy Code R:size=9}[$mpd_elapsed/$mpd_length]$font ${voffset -2}${font 01FLOPDESIGN:size=9}$mpd_title by $mpd_artist${font} \
